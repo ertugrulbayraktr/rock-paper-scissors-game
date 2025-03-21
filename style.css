@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+  padding: 30px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.choices {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.choice {
+  background-color: #e0f7ff;
+  border-radius: 50%;
+  padding: 20px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.choice:hover {
+  transform: scale(1.1);
+}
+
+.choice img {
+  width: 60px;
+  height: 60px;
+}
+
+.game-info {
+  margin-top: 20px;
+}
+
+.player-info {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.player-info p {
+  margin: 8px 0;
+}
+
+.result-container {
+  margin: 20px 0;
+}
+
+#resultDisplay {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+}
+
+.score-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+#resultDisplay.win {
+  color: green;
+}
+
+#resultDisplay.lose {
+  color: red;
+}
+
+#resultDisplay.tie {
+  color: #888;
+}
